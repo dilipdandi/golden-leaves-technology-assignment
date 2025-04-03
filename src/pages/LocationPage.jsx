@@ -4,9 +4,9 @@ import locationMap from "../../assets/Location Map.png";
 
 const LocationPage = () => {
   return (  
-    <section className="h-auto min-h-[100vh] w-full p-4 flex flex-col justify-evenly items-center text-center">
+    <section className="h-auto min-h-[100vh] w-full p-4 flex flex-col  items-center ">
   <Buttons>Location</Buttons>
-  <Paragraph className="max-w-[90%] md:max-w-[70%]">
+  <Paragraph className="max-w-[90%] md:max-w-[70%] text-center">
     Godrej River Royale is strategically nestled along the Baner-Hinjawadi Road,
     offering serenity and proximity to the bustling Hinjawadi Phase 1.
     This prime riverside location is not just an address; it's a testament to

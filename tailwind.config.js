@@ -6,6 +6,8 @@ export default {
       backgroundImage: {
         hero: "url('./assets/Hero Section image.png')",
         highlight: "url('./assets/Highlights Image.png')",
+        plainBackground:"url('./assets/plain-black-background.jpg')",
+        aboutImage:"url('./assets/About The Developer/image 45.png')",
       },
       colors: {
         primaryYellow: "#CF9A2C",

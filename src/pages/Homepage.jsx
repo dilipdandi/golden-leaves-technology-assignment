@@ -5,6 +5,8 @@ import Amenties from "./Amenties";
 import Gallery from "./Gallery";
 import Layout from "./Layout";
 import LocationPage from "./LocationPage";
+import AboutTheDeveloper from "./AboutTheDeveloper";
+import Contact from "./Contact";
 
 const Homepage = () => {
   return (
@@ -16,6 +18,8 @@ const Homepage = () => {
       <Gallery />
       <Layout />
       <LocationPage />
+      <AboutTheDeveloper />
+      <Contact />
     </section>
   );
 };

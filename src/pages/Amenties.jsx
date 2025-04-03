@@ -5,7 +5,7 @@ import Cards from "../components/Cards";
 
 const Amenties = () => {
   return (
-    <section className="h-auto w-full p-4 flex flex-col gap-6 md:gap-10 lg:gap-16 justify-evenly items-center bg-primaryBackground">
+    <section className="h-auto w-full p-4 flex flex-col gap-6 md:gap-10 lg:gap-16 items-center bg-primaryBackground">
   <Buttons>Amenities</Buttons>
   <Paragraph className="text-center max-w-[90%] md:max-w-[70%]">
     Wellness and elegance come together at Godrej River Royale, offering more than just amenities –  
