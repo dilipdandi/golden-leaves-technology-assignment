@@ -5,7 +5,7 @@ import Paragraph from "../components/Paragraph"
 
 const Contact = () => {
   return (
-    <section className="h-[100vh] w-full bg-plainBackground bg-no-repeat bg-cover bg-center text-center pt-24">
+    <section className="h-[100vh] w-full bg-plainBackground bg-no-repeat bg-cover bg-center text-center pt-24 mb-24">
         <div className="w-full h-auto relative">
             <img className="w-full h-[100vh]" src={highlightImage} alt="bgImg"/>
             <div className="absolute top-4 left-1/2 transform  -translate-x-1/2 mt-10">
@@ -17,7 +17,7 @@ const Contact = () => {
             Whether you have questions, want to schedule a site visit, or need more information,
             our dedicated team is here to assist you. Your dream home journey begins with a simple call.
             </Paragraph>
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-2 mt-20 ">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-2 mt-16 ">
             <Input placeholder="Name" type="text" className="w-fit max-w-sm uppe" />
             <Input placeholder="Contact" type="tel" className="w-fit max-w-sm" />
           </div>

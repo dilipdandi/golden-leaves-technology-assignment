@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import LocationPage from "./LocationPage";
 import AboutTheDeveloper from "./AboutTheDeveloper";
 import Contact from "./Contact";
+import Information from "./Information";
 
 const Homepage = () => {
   return (
@@ -20,6 +21,7 @@ const Homepage = () => {
       <LocationPage />
       <AboutTheDeveloper />
       <Contact />
+      <Information />
     </section>
   );
 };

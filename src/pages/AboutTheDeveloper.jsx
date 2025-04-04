@@ -5,7 +5,7 @@ import image45 from "../../assets/About The Developer/image 45.png";
 
 const AboutTheDeveloper = () => {
   return (
-    <section className="h-auto min-h-[100vh] w-full bg-plainBackground bg-no-repeat bg-cover bg-center sm:bg-top md:bg-center lg:bg-bottom flex flex-col justify-start items-center mt-10 pt-24 px-4 sm:px-8">
+    <section className="h-auto min-h-[100vh] w-full bg-plainBackground bg-no-repeat bg-cover bg-center  max-md:bg-center  flex flex-col justify-start items-center mt-10 pt-24 px-4 sm:px-8">
     <Buttons>About The Developer</Buttons>
     <div className="text-white flex flex-col justify-center items-center text-center">
         <Paragraph>
