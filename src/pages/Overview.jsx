@@ -14,12 +14,12 @@ const Overview = () => {
         this 4-acre riverside marvel is not just a home; it's a lifestyle beyond imagination.
       </Paragraph>
     
-    <Paragraph className="text-center px-4 md:px-12 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]">
+    <Paragraph>
       The riverview aspect adds an enchanting touch, allowing residents to wake up to the  
       soothing melodies of the river and bask in the beauty of nature from the comfort of their homes.
     </Paragraph>
 
-    <Paragraph className="text-center px-4 md:px-12 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]">
+    <Paragraph>
       Offering a selection of meticulously designed 3 and 4 BHK ultra-luxury apartments near Hinjawadi,  
       Godrej Properties presents a project that doesn't just raise the bar—it sets a new standard  
       for luxurious flats in Pune.

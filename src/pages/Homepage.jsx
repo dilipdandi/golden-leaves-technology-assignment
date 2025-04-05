@@ -8,13 +8,15 @@ import LocationPage from "./LocationPage";
 import AboutTheDeveloper from "./AboutTheDeveloper";
 import Contact from "./Contact";
 import Information from "./Information";
+import HighlightSmallScreenImage from "../components/HighlightSmallScreenImage";
 
 const Homepage = () => {
   return (
-    <section className="h-auto m-0 p-0 bg-primaryBackground">
+    <section className="h-auto w-screen flex flex-col items-center m-0 p-0 bg-primaryBackground ">
       <Hero />
       <Overview />
       <Highlights />
+      <HighlightSmallScreenImage />
       <Amenties />
       <Gallery />
       <Layout />
