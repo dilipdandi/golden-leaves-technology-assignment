@@ -39,7 +39,7 @@ const Information = () => {
 
       <div className=" w-full flex flex-col justify-center items-center text-white ">
         <hr className="bg-white w-[50%] max-md:w-[90%]" />
-        <Paragraph className="max-sm:text-[10px] max-sm:w-[80%]">
+        <Paragraph className="text-sm max-sm:text-[8px] max-sm:w-[80%]">
           Copyright © 2023 All Rights Reserved by Godrej Properties
         </Paragraph>
       </div>

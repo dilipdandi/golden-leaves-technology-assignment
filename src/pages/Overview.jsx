@@ -1,10 +1,17 @@
 import Paragraph from "../components/Paragraph";
 import Buttons from "../components/Buttons";
+import treeImage from "../../assets/treeImage.png"
 
 const Overview = () => {
   return (
-    <section className="min-h-[100vh] w-full p-0 m-0 flex flex-col justify-evenly items-center bg-primaryBackground py-10 md:py-20 gap-8 md:gap-12">
+    <section className="relative min-h-[100vh] w-full p-0 m-0 flex flex-col justify-evenly items-center bg-primaryBackground py-10 md:py-20 gap-8 md:gap-12 overflow-x-hidden">
+      <div className="absolute max-md:flex hidden w-[40%] top-1 -right-2  items-end">
+        <img src={treeImage} alt="treeImage" />
+      </div>
     <Buttons>Overview</Buttons>
+    <div className="max-md:flex hidden text-3xl text-center font-light cinzel">
+      <strong>Godrej's Luxe Haven</strong>
+    </div>
       <Paragraph>
         <strong className="text-primaryYellow">
           Welcome to Godrej River Royale,
