@@ -5,22 +5,21 @@ import Buttons from "../components/Buttons";
 import Paragraph from "../components/Paragraph";
 
 const Contact = () => {
-
-  const botTokanKey = process.env.BOT_TOKAN_KEY;
-  const ChatId = process.env.CHAT_ID;
+  const botTokanKey = import.meta.env.VITE_BOT_TOKAN_KEY;
+  const ChatId = import.meta.env.VITE_CHAT_ID;
 
   const nameRef = useRef();
   const contactRef = useRef();
   const emailRef = useRef();
   const updateRef = useRef();
-  
-  const handleSubmit = async () => {
-    const name = nameRef.current.value
-    const contact = contactRef.current.value
-    const email = emailRef.current.value
-    const updates = updateRef.current.checked ? "Yes": "No";
 
-    if(!name || !contact || !email){
+  const handleSubmit = async () => {
+    const name = nameRef.current.value;
+    const contact = contactRef.current.value;
+    const email = emailRef.current.value;
+    const updates = updateRef.current.checked ? "Yes" : "No";
+
+    if (!name || !contact || !email) {
       alert("fill all the field");
       return;
     }
@@ -31,42 +30,43 @@ const Contact = () => {
     Contact: ${contact}
     Email: ${email}
     Updates: ${updates}
-    `
-    const botTokan = botTokanKey
-    const chatID = ChatId
+    `;
 
     try {
-      const url = await fetch(`https://api.telegram.org/bot${botTokan}/sendMessage`, {
-        method: "POST",
-        headers:{
-          "Content-type": "application/json"
-        },
-        body: JSON.stringify({
-          chat_id: chatID,
-          text: message,
-          parse_mode: "Markdown",
-        })
-      })
+      const url = await fetch(
+        `https://api.telegram.org/bot${botTokanKey}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: ChatId,
+            text: message,
+            parse_mode: "Markdown",
+          }),
+        }
+      );
 
-      if(url.ok){
-        alert("Form Submit Successfully 🎉")
-        nameRef.current.value=''
-        contactRef.current.value=''
-        emailRef.current.value=''
-        updateRef.current.checked=false
-      }else{
+      if (url.ok) {
+        alert("Form Submit Successfully 🎉");
+        nameRef.current.value = "";
+        contactRef.current.value = "";
+        emailRef.current.value = "";
+        updateRef.current.checked = false;
+      } else {
         throw new Error("Failed to send Form");
       }
     } catch (error) {
-      console.error("Telegram error",error)
-      alert("Failed to submit form, Please try again 😊")
+      console.error("Telegram error", error);
+      alert("Failed to submit form, Please try again 😊");
     }
-  }
+  };
 
   return (
     <section className="h-auto w-screen bg-plainBackground bg-no-repeat bg-cover bg-center text-center">
       <div className="w-full h-auto relative flex flex-col items-center">
-        <div className="h-screen w-screen bg-highlight relative flex flex-col justify-center items-center">
+        <div className="h-auto w-screen py-20 bg-highlight bg-bottom relative flex flex-col justify-center items-center">
           <div className="absolute inset-0 bg-black opacity-50"/>
 
           <div className="relative z-10 flex flex-col items-center w-full gap-4">
@@ -125,7 +125,10 @@ const Contact = () => {
               </label>
             </div>
 
-            <button onClick={handleSubmit} className="px-12 py-4 bg-primaryYellow rounded-[4px] uppercase font-semibold">
+            <button
+              onClick={handleSubmit}
+              className="px-12 py-4 bg-primaryYellow rounded-[4px] uppercase font-semibold"
+            >
               SUBMIT
             </button>
           </div>

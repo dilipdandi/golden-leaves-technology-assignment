@@ -16,7 +16,7 @@ const LocationPage = () => {
     convenience, connecting you seamlessly to major cities.
   </Paragraph>
   <div className="w-full flex justify-center md:justify-end pt-8">
-    <img className="w-full max-w-[90%] md:max-w-[800px] h-auto" src={locationMap} alt="Map" />
+    <img className="w-full max-md:w-[90%] h-auto" src={locationMap} alt="Map" />
   </div>
 </section>
 
