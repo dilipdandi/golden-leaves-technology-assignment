@@ -69,7 +69,7 @@ const Hero = () => {
       )}
 
       <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10 flex justify-center items-center">
-        <div className="absolute top-10 w-full px-10 text-white flex flex-col justify-center items-center">
+        <div className="absolute top-10 w-full px-10 text-white flex flex-col justify-center items-center gap-10">
           <div className="w-full flex max-md:justify-end justify-between items-center">
             <img src={logo} alt="Logo" className="max-md:hidden w-[30%]" />
             <button
